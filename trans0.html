@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='trans.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body onload="move()" class="transitionback">
+    
+    <div class="container">
+        <h3 class="text">Aguarde enquanto a página carrega...</h3>
+    <div class="grey">
+    <div id="myBar" class="green" style="height:20px;width:0"></div>
+  </div>
+</div>
+    <script>
+        function move() {
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 15);
+        function frame() {
+        if (width >= 100) {
+            window.location="index1.html"
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

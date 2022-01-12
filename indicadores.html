@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>USF Vimaranes - Indicadores </title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link rel="stylesheet" type="text/css" href="sass.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="shortcut icon" href="img/usf.ico"/>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+    
+          function drawChart() {
+    
+            var data = google.visualization.arrayToDataTable([
+              ['Task', 'Hours per Day'],
+              ['65+ Anos',     2.61],
+              ['15-64 Anos',   7.25],
+            ]);
+    
+            var options = {
+              title: 'Índice de dependência dos Idosos = 34,2'
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    
+            chart.draw(data, options);
+          }
+        </script>
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", {packages:["corechart"]});
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ['Task', 'Hours per Day'],
+                  ['0-14 Anos',     2],
+                  ['15-64 Anos',      11],
+                ]);
+        
+                var options = {
+                  title: 'Índice de dependência de jovens = 21,2',
+                  pieHole: 0.4,
+                };
+        
+                var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                chart.draw(data, options);
+              }
+            </script>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load("current", {packages:["corechart"]});
+                  google.charts.setOnLoadCallback(drawChart);
+                  function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Task', 'Hours per Day'],
+                      ['0-14 Anos',     2],
+                      ['15-64 Anos',     11],
+                      ['65+ Anos',  5],
+                    ]);
+            
+                    var options = {
+                      title: 'Índice de dependência total = 55.3',
+                      is3D: true,
+                    };
+            
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                    chart.draw(data, options);
+                  }
+                </script>
+                   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                   <script type="text/javascript">
+                     google.charts.load('current', {'packages':['corechart']});
+                     google.charts.setOnLoadCallback(drawChart);
+               
+                     function drawChart() {
+               
+                       var data = google.visualization.arrayToDataTable([
+                         ['Task', 'Hours per Day'],
+                         ['15-64 Anos',     2],
+                         ['População Total',      11],
+
+                       ]);
+               
+                       var options = {
+                         title: 'Percentagem de população activa = 79,3%'
+                       };
+               
+                       var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+               
+                       chart.draw(data, options);
+                     }
+                   </script>
+                       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                       <script type="text/javascript">
+                         google.charts.load("current", {packages:["corechart"]});
+                         google.charts.setOnLoadCallback(drawChart);
+                         function drawChart() {
+                           var data = google.visualization.arrayToDataTable([
+                             ['Task', 'Hours per Day'],
+                             ['0-14 Anos',     2],
+                             ['População Total',        11],
+                           ]);
+                   
+                           var options = {
+                             title: 'Percentagem de população jovem = 13.6%',
+                             pieHole: 0.4,
+                           };
+                   
+                           var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+                           chart.draw(data, options);
+                         }
+                       </script>
+                           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                           <script type="text/javascript">
+                             google.charts.load("current", {packages:["corechart"]});
+                             google.charts.setOnLoadCallback(drawChart);
+                             function drawChart() {
+                               var data = google.visualization.arrayToDataTable([
+                                 ['Task', 'Hours per Day'],
+                                 ['65+ Anos',     11],
+                                 ['População Total',      2],
+                               ]);
+                       
+                               var options = {
+                                 title: 'Percentagem de população idosa = 64.4%',
+                                 is3D: true,
+                               };
+                       
+                               var chart = new google.visualization.PieChart(document.getElementById('piechart_3d1'));
+                               chart.draw(data, options);
+                             }
+                           </script>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">USF Vimaranes</a></div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li>
+                <label for="btn-1" class="show">Quem somos? +</label>
+                <a href="quemsomos.html">Quem somos?</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="informaçoes.html">Informações</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">O que fazemos? +</label>
+                <a href="#">O que fazemos?</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="açoes.html">Ações</a></li>
+                </ul>
+            </li>
+            <li><a href="indicadores.html">Indicadores</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li>
+                <label for="btn-3" class="show">Mais apoio +</label>
+                <a>Mais apoio</a>
+                <input type="checkbox" id="btn-3">
+                <ul>
+                    <li><a href="contactosuteis.html">Contactos </a></li>
+                    <li><a href="perguntasfrequentes.html">Perguntas </a></li>
+                </ul>
+            <li><a href="login.html">Login</a></li>
+            </li>
+        </ul>
+</nav>
+<div class="grid-container">
+  <div class="indicadores">
+    <div class="indicadoreshero">
+      <div class="indicadorescontent">
+        <h1>Indicadores</h1>
+      </div>
+    </div>
+  </div>
+    <div class="graph1">
+    <div id="piechart" ></div>
+    </div>
+  <div class="graph2"> 
+  <div id="donutchart" ></div>
+  </div>
+  <div class="graph3"> 
+  <div id="piechart_3d" ></div>
+  </div>
+  <div class="graph4"> 
+  <div id="piechart1" ></div>
+  </div>
+  <div class="graph5">
+  <div id="donutchart1" ></div>
+  </div>
+  <div class="graph6">
+  <div id="piechart_3d1"></div>
+  </div>
+</div>
+</body>
+</html>
